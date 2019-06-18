@@ -43,7 +43,7 @@ Alur logikanya:
 3. Untuk login kita cocokkan enkripsi BCRYPT pada database dengan password inputan.
 4. jika True maka akan login.
 
-Berikut Logika Source Code Hashing BCRYPT.
+Berikut Logika Code Hashing BCRYPT.
 <?php
 	$string = "admin"; //passwordnya
 	$md5 = md5($string); //hashmd5
