@@ -82,7 +82,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id_user`, `username`, `password`) VALUES
-(1, 'admin', '21232f297a57a5a743894a0e4a801fc3');
+(1, 'admin', '$2y$10$ACLSeD2JhcBWVX.6UIEo5eHLF0J1R9brFlvu2PJGHYtBi3gcGygIG');
 
 --
 -- Indexes for dumped tables
