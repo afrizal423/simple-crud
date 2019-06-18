@@ -16,4 +16,4 @@ Ini adalah contoh project yang minimalis untuk bisa dikembangkan.
 ## Installation
 - XAMPP/LAMPP
   - Drag to folder xampp/htdocs
-  - Export database (.sql) to your database (ex: phpmyadmin,etc) and the name crud-simplE
+  - Export database (.sql) to your database (ex: phpmyadmin,etc) and the name crud-simple
