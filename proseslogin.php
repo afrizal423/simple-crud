@@ -59,6 +59,31 @@ Berikut Logika Code Hashing BCRYPT.
 		echo "\n\nSukses Login\n";
 	}
 ?>
+
+Berikut Logika Code Hashing ARGON2ID.
+
+<?php
+	$string = "admin"; //passwordnya
+	$md5 = md5($string); //hashmd5
+	$bcrypt = password_hash($md5, PASSWORD_ARGON2ID);
+	echo "\n===Logic Hash ARGON2ID untuk Login===\n\n";
+	echo "Masukkan Password = ";
+	$pass = trim(fgets(STDIN)); //inputan password 
+	$md5pass = md5($pass); //hash md5
+	
+	//var_dump(password_verify($md5pass, $bcrypt));
+
+	 if (password_verify($md5pass, $bcrypt)){
+	// 	echo "Hasil MD5 = ".md5($pass)."\n";
+	// 	echo "Hasil MD5 to BCRYPT = ".$bcrypt."\n";
+	echo "Hasil ARGON2ID = ".$bcrypt."\n";
+	print_r( password_get_info( $bcrypt ) );
+	 	echo "\n\n===Status===\nSukses Login\n";
+	 } else {
+		echo "\n\n===Status===\nGagal Login\n";
+
+	 }
+?>
 */
  
 
